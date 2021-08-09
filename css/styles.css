@@ -1,0 +1,133 @@
+body {
+    background-color: gainsboro;
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Roboto Mono", monospace;
+}
+
+* {
+    box-sizing: ;
+}
+
+.wrapper {
+    height: auto;
+    width:auto;
+}
+
+nav {
+    border: black solid 2px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(248, 254, 255);
+}
+
+header {
+    color: red;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 255, 0.664);
+}
+
+.profile-picture {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.art {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 5px;
+    width: 950px;
+    height:650px;
+}
+
+.art:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*starts form css*/
+
+/*form css ends
+
+/*centering img margin left right to auto
+/*max width does not allow over scale
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    max-width: 100%; 
+    height: auto;
+}*/
+
+footer, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+/*
+.one {
+    color: blueviolet;
+    font-size: large;
+    height: 80px;
+    width: 200px;
+    border: black solid 5px;
+    border-radius: 1em;
+    padding: 150px;
+    margin: 150px;
+    background-color:cadetblue;
+    text-align: center;
+}
+
+.two {
+    color: blueviolet;
+    font-size: large;
+    height: 80px;
+    width: 200px;
+    border: black solid 5px;
+    border-radius: 1em;
+    padding: 100px;
+    margin: 150px;
+    background-color:cadetblue;
+    text-align: center;
+}
+
+.three {
+    color: blueviolet;
+    font-size: large;
+    height: 80px;
+    width: 200px;
+    border: black solid 5px;
+    border-radius: 1em;
+    padding: 100px;
+    margin: 150px;
+    background-color:cadetblue;
+    text-align: center;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    padding: 10px;
+    margin: 10px;
+}
+*/
