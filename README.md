@@ -28,4 +28,4 @@ When the first web sites started to appear in the mid-nineties, brochure sites w
 
 # Wireframe
 
-<img src="" height="550px">
+<img src="./image/wireF.PNG" height="550px">
