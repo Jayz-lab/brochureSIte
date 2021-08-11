@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>My Portfolio</title>
+    <!--external css-->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
+            <!--navbar links begins-->
             <nav id="home">
                 <a href="#home">Home</a> |
                 <a href="#about">About</a> |
                 <a href="#portfolio">Portfolio</a> |
                 <a href="#contact">Contact</a> 
             </nav>
+            <!--navbar ends-->
         </header>
         <main>
-            <div class="container">
+            <!--profile intro begins-->
+            <div>
                 <div class="intro">
                     <img class="profile-picture" src="./image/profile-picture.jpg" alt="profile-image" title="A profile image of author"/>
                     <h1 id="my-name">John Doe</h1>
@@ -27,65 +32,112 @@
                         <em>{{{ Never stop learning }}}</em>
                     </p>	
                 </div>
+                <!--profile intro ends-->
             <hr/>
+
             <br>
+
             <section>
                 <figure>
-                    <div>
-                        <img class="art" src="./image/camera-1.jpg" alt="camera" title="camera with travel photos">
-                    </div>
+                        <img class="travel" src="./image/camera-1.jpg" alt="camera" title="camera with travel photos">
+                        <figcaption style="text-align: center; font-size: small;"><em>Travel photos from Europe</em></figcaption>
                 </figure>
-                <br><br>
 
-                <div id="about">
+                <!--about/ article ends-->
+
+                <article id="about">
                     <h3>About</h3>
-                </div>
-                
-                <article>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae amet quisquam eligendi delectus sed quos iste non neque voluptatem impedit deleniti, quasi exercitationem similique modi provident nobis ut quod.</article>
-                <article>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor unde nobis assumenda provident, beatae eligendi maiores eos consequuntur facere ullam pariatur est itaque ea? Fuga vero earum autem placeat tempora!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quas sint perferendis hic, corporis laboriosam alias porro in a repellendus commodi quae dignissimos asperiores dolore, ad, cum doloribus impedit molestias?
+                    <div class="col-3">
+                    <b><em>Lorem ipsum dolor sit</em></b>, amet consectetur adipisicing elit. Dolor unde nobis assumenda provident, beatae eligendi maiores eos consequuntur facere ullam pariatur est itaque ea? Fuga vero earum autem placeat tempora!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quas sint perferendis hic, corporis laboriosam alias porro in a repellendus commodi quae dignissimos asperiores dolore, ad, cum doloribus impedit molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio, iusto impedit adipisci odit quasi pariatur amet aspernatur ipsa nemo vel obcaecati sint dolor, officia saepe omnis optio, id sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore aperiam architecto dignissimos. Laudantium facere, tenetur sequi tempora sit quae aperiam magnam nostrum, perspiciatis numquam labore, sapiente nulla asperiores iure.
+                    </div>
                 </article>
-                <br><br>
+                <!--about/article ends-->
+            
+                <br>
+
             </section>
 
             <hr/>
-
+<!--my portfolio begins here-->
             <section>
                 <div id="portfolio">
                     <h3>My Portfolio</h3>
                 </div>
+                <div class="projects-grid"> 
+                    <div class="project-image-wrapper">
+                        <a href="https://pixabay.com/images/search/amsterdam/" target="_blank"><img class="project-image" src="./image/alley-7.jpg" alt="alley way" title="An alley way" height="300"></a>
+                        <h4>Project 1- Amsterdam</h4>
+                    </div>
+                <div class="project-image-wrapper">
+                    <a href="https://pixabay.com/images/search/Japan/" target="_blank"><img class="project-image" src="./image/japan-8.jpg" alt="Alley in Japan" title="Japan alleyway" height="300"></a>
+                        <h4>Project 2- Japan</h4>
+                    </div>
+                <div class="project-image-wrapper">
+                    <a href="https://pixabay.com/images/search/london/" target="_blank"><img class="project-image" src="./image/london-9.jpg" alt="Bridge in London" title="London travel" height="300"></a>
+                        <h4>Project 3- London</h4>
+                    </div>
+                <div class="project-image-wrapper">
+                    <a href="https://pixabay.com/images/search/hongkong/" target="_blank"><img class="project-image" src="./image/clouds-HK.jpg" alt="Hongkong night lights" title="Hongkong night lights" height="300"></a>
+                        <h4>Project 4- Hongkong</h4>
+                    </div>
+            </div>
             </section>
-
+            <!--portfolio ends here-->
         </main>
 
-        <!--
-        <div class="one">
-            <p>I am div one</p>
-        </div>
-        <div class="two">
-            <p>I am div two</p>
-        </div>
-        <div class="three">
-            <p>I am div three</p>
-        </div>
-        <aside>aside</aside>-->
-        <br>
+        <!--<aside>aside</aside>-->
+
         <hr/>
+        <Section class="links-contact">
+            <!--social media links begins-->
+            <div class="links">
+				<h3>Links</h3>
+				<ul>
+					<li>
+						<a href="https://www.github.com/">Github</a>
+					</li>
+					<li>
+						<a href="https://www.twitter.com/">Twitter</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+            <!--social media links ends-->
+
+<!--form field begins-->
         <contact id="contact">
             <h3>Contact Form</h3>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                </li>
+            </ul>
+            </form>
         </contact>
+        <!--form field ends-->
+        </Section>
+        
             
 
-<br><br>
+<br>
+<!--footer copyright begins-->
 <footer>
     <div>Design with love &hearts; by JJ ~ Copyright &copy; 2021</div>
         </footer>
     </div>
+    <!--footer copyright ends-->
 </body>
 </html>
-
-
-
-

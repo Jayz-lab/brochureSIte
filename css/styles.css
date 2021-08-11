@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: gainsboro;
     font-family: "Noto Sans", sans-serif;
@@ -7,20 +11,23 @@ h1, h2, h3, h4 {
 	font-family: "Roboto Mono", monospace;
 }
 
-* {
-    box-sizing: ;
-}
-
 .wrapper {
-    height: auto;
-    width:auto;
+    /*border: 1px solid gray;*/
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 nav {
-    border: black solid 2px;
+    /*border: black solid 2px;*/
     margin: 20px;
     padding: 20px;
-    background-color: rgb(248, 254, 255);
+    background-color:silver;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0));
+}
+
+a {
+    color: black;
 }
 
 header {
@@ -32,7 +39,7 @@ header {
     padding: 10px;
 }
 
-.container {
+.intro {
     text-align: center;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 255, 0.664);
@@ -43,91 +50,155 @@ header {
     margin-left: auto; 
     margin-right: auto;
     border-radius: 50%;
+    width: 20%;
 }
 
-.art {
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    padding: 5px;
-    width: 950px;
-    height:650px;
-}
-
-.art:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-/*starts form css*/
-
-/*form css ends
-
-/*centering img margin left right to auto
-/*max width does not allow over scale
-img {
+/***********camera css begins**********/
+.travel {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
-    max-width: 100%; 
-    height: auto;
-}*/
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.travel:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    filter: brightness(.75);
+}
+/***********camera css ends**********/
+
+/***********about section css begins**********/
+.col-3 {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+}
+/***********about section css ends**********/
+
+/**********Portfolio css begins**********/
+.projects-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.project-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.project-image {
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+	transition: all ease-in-out .2s;
+}
+
+.project-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
+}
+
+@media (max-width: 650px) {
+	.projects-grid {
+	grid-template-columns: 100%;
+	}
+}
+
+h4 {
+    text-align: center;
+}
+/**********Portfolio css ends**********/
 
 footer, h3 {
     text-align: center;
     margin-bottom: 10px;
 }
-hr {
+
+hr { /*horizontal rule css*/
 	border: 0;
 	height: 1px;
 	background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
-/*
-.one {
-    color: blueviolet;
-    font-size: large;
-    height: 80px;
-    width: 200px;
-    border: black solid 5px;
-    border-radius: 1em;
-    padding: 150px;
-    margin: 150px;
-    background-color:cadetblue;
+
+
+/*******************social links begins****************/
+.links {
     text-align: center;
 }
 
-.two {
-    color: blueviolet;
-    font-size: large;
-    height: 80px;
-    width: 200px;
-    border: black solid 5px;
+a {
+    color: rgba(0, 0, 255, 0.664);
+}
+/*******************social links ends****************/
+
+
+/**********start of form css**********/
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+    /* Form outline */
+    padding: 1em;
+    border: 2px solid #CCC;
     border-radius: 1em;
-    padding: 100px;
-    margin: 150px;
-    background-color:cadetblue;
-    text-align: center;
 }
 
-.three {
-    color: blueviolet;
-    font-size: large;
-    height: 80px;
-    width: 200px;
-    border: black solid 5px;
-    border-radius: 1em;
-    padding: 100px;
-    margin: 150px;
-    background-color:cadetblue;
-    text-align: center;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
-    color: brown;
-    padding: 10px;
-    margin: 10px;
+form li + li {
+    margin-top: 1em;
 }
-*/
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,textarea {
+    /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    /*box-sizing: border-box;*/
+
+    /* Match form field borders */
+    border: 2px solid #999;
+}
+
+input:focus,textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; 
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+    margin-left: .5em;
+}
+/**********form css ends***********/
