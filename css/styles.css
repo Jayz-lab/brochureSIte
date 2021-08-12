@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    /*border: 1px solid gray;*/
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 body {
     background-color: gainsboro;
     font-family: "Noto Sans", sans-serif;
@@ -9,12 +15,6 @@ body {
 
 h1, h2, h3, h4 {
 	font-family: "Roboto Mono", monospace;
-}
-
-.wrapper {
-    /*border: 1px solid gray;*/
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 nav {
@@ -26,12 +26,8 @@ nav {
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0));
 }
 
-a {
-    color: black;
-}
-
 header {
-    color: red;
+    color: black;
     font-size: 20px;
     font-family: cursive;
     text-align: center;
@@ -45,15 +41,22 @@ header {
     box-shadow: rgba(0, 0, 255, 0.664);
 }
 
+.quote {
+    text-align: center;
+    font-style: italic;
+}
+
 .profile-picture {
     display: block;
     margin-left: auto; 
     margin-right: auto;
     border-radius: 50%;
     width: 20%;
+    opacity: 0.9;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.719)
 }
 
-/***********camera css begins**********/
+/******camera css begins*****/
 .travel {
     display: block;
     margin-left: auto;
@@ -68,20 +71,20 @@ header {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     filter: brightness(.75);
 }
-/***********camera css ends**********/
 
-/***********about section css begins**********/
+
+/******about section css begins*****/
 .col-3 {
     text-align: justify;
     margin-left: 15px;
     margin-right: 15px;
     column-count: 3;
     column-gap: 40px;
-    column-rule: 1px solid lightblue;
+    column-rule: 1px solid silver;
 }
-/***********about section css ends**********/
 
-/**********Portfolio css begins**********/
+
+/******Portfolio css begins******/
 .projects-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -113,8 +116,8 @@ header {
 h4 {
     text-align: center;
 }
-/**********Portfolio css ends**********/
 
+/*****footer begins******/
 footer, h3 {
     text-align: center;
     margin-bottom: 10px;
@@ -127,7 +130,7 @@ hr { /*horizontal rule css*/
 }
 
 
-/*******************social links begins****************/
+/******social links begins*****/
 .links {
     text-align: center;
 }
@@ -135,10 +138,10 @@ hr { /*horizontal rule css*/
 a {
     color: rgba(0, 0, 255, 0.664);
 }
-/*******************social links ends****************/
 
 
-/**********start of form css**********/
+
+/*****form css begins*****/
 form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -201,4 +204,47 @@ button {
     /* This extra margin represent roughly the same space as the space between the labels and their text fields */
     margin-left: .5em;
 }
-/**********form css ends***********/
+
+/*****media queries begins*****/
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) { 
+}
