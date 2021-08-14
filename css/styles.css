@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /*default styling that browsers use*/
 }
 
 .wrapper {
@@ -27,7 +28,7 @@ nav {
 }
 
 header {
-    color:black;
+    color: black;
     font-size: 20px;
     font-family: cursive;
     text-align: center;
@@ -38,7 +39,6 @@ header {
 .intro {
     text-align: center;
     margin: 0 auto;
-    box-shadow: rgba(0, 0, 255, 0.664);
 }
 
 .quote {
@@ -107,12 +107,6 @@ header {
 	box-shadow: 0 8px 12px 0 rgb(34, 60, 80, 0.16);
 }
 
-@media (max-width: 650px) {
-	.projects-grid {
-	grid-template-columns: 100%;
-	}
-}
-
 h4 {
     text-align: center;
 }
@@ -139,8 +133,6 @@ a {
     color: rgba(0, 0, 255, 0.664);
 }
 
-
-
 /*****form css begins*****/
 form {
     /* Center the form on the page */
@@ -159,6 +151,7 @@ ul {
 }
 
 form li + li {
+    /*makes space between labels*/
     margin-top: 1em;
 }
 
@@ -170,10 +163,10 @@ label {
 }
 
 input,textarea {
-    /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
+    /* To ensure all text fields with same font settings By default, textareas have a monospace font */
     font: 1em sans-serif;
 
-    /* Uniform text field size */
+    /* makes text field Uniform*/
     width: 300px;
     /*box-sizing: border-box;*/
 
@@ -181,70 +174,43 @@ input,textarea {
     border: 2px solid #999;
 }
 
-input:focus,textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-}
-
 textarea {
-    /* Align multiline text fields with their labels */
+    /* aligh text fields with their labels */
     vertical-align: top;
 
-    /* Provide space to type some text */
+    /* textarea box space*/
     height: 5em;
 }
 
 .button {
-    /* Align buttons with the text fields */
+    /* align buttons with the text fields */
     padding-left: 90px; 
-    /* same size as the label elements */
 }
 
 button {
-    /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+    /* aligns with text field */
     margin-left: .5em;
 }
 
 /*****media queries begins*****/
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
+/*mobile devices*/
+@media only screen and (max-width: 480px) {
+	.projects-grid {
+	grid-template-columns: 100%;
+	}
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) { 
+/*tablet
+@media only screen and (max-width: 768px) {
+	.projects-grid {
+	grid-template-columns: 100%;
+	}
+}*/
 
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (min-resolution: 192dpi) { 
+/*small screens-laptops*/
+@media only screen and (max-width: 1024px) {
+	.projects-grid {
+	grid-template-columns: 100%;
+	}
 }

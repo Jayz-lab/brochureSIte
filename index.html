@@ -24,7 +24,6 @@
         </header>
         <main>
             <!--profile intro begins-->
-            <div>
                 <div class="intro">
                     <img class="profile-picture" src="./image/jw-profile.png" alt="profile-image" title="John-Wick profile-image"/>
                     <h1>John Wick</h1>
@@ -110,7 +109,7 @@
             <!--social media links ends-->
 
 <!--form field begins-->
-        <contact id="contact">
+        <div id="contact">
             <h3>Contact Form</h3>
             <form action="/my-handling-form-page" method="post">
                 <ul>
@@ -126,13 +125,14 @@
                         <label for="msg">Message:</label>
                         <textarea id="msg" name="user_message"></textarea>
                 </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
             </ul>
             </form>
-        </contact>
+        </div>
         <!--form field ends-->
         </Section>
-        
-            
 
 <br>
 <!--footer copyright begins-->
