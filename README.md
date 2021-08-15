@@ -29,4 +29,4 @@ When the first web sites started to appear in the mid-nineties, brochure sites w
 # Wireframe
 <img src="./image/wireF.PNG" height="550px">
 
-#### Completed work: https://mycodingjournal.github.io/brochureSIte/
+#### Completed work: http://toothsome-grape.surge.sh/ 
