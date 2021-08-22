@@ -197,8 +197,11 @@ button {
 /*mobile devices*/
 @media only screen and (max-width: 480px) {
 	.projects-grid {
-	grid-template-columns: 100%;
+	grid-template-columns: 100%; /*defines sizing functions of grid-col*/
 	}
+    .col-3 {
+    column-count: auto; /*adjust to single column for readability*/
+    }
 }
 
 /*tablet
