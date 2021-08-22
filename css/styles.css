@@ -38,7 +38,7 @@ header {
 
 .intro {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto; /*top/bottom- 0, left/right- auto;*/
 }
 
 .quote {
